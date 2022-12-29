@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seajro Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
-    <link rel="stylesheet" href="index.css">
-    <script>
-        $(function() {
-          $( "#forDate" ).datepicker();
-        });
-        </script>
-        <script src="app.js" defer></script>
-</head>
-<body>
-    <header>
-        <h3 class="logo">Seajro</h3>
-        <nav>
-           <input type="text" placeholder="Search"> 
-           <div class="avatar">
-           <a href=""><img src="images.png" alt=""></a>
-        </div>
-        </nav>
-    </header>
+{% extends 'base.html' %}
+
+{% block content %}
     <main>
         <div class="weatherData">
             <div class="card info">
@@ -82,8 +56,4 @@
             </section>
         </div>
     </main>
-    <footer>
-        <p>&COPY; Copyright <span id="year">Date</span></p>
-    </footer>
-</body>
-</html>
+{% endblock %}
